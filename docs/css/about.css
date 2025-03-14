@@ -1,0 +1,36 @@
+header {
+    height: 30vh;
+    background-image: url('../images/bg-01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.lh-26 {
+    line-height: 24px;
+}
+
+.out-img img {
+    transition: 0.5s;
+}
+
+.out-img:hover img {
+    transform: scale(1.1);
+}
+
+.out-img1 {
+    transform: translate(20px, -20px);
+}
+
+.out-img2 {
+    transform: translate(-20px, -20px);
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}

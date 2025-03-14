@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        --bs-modal-width: 950px;
+    }
+}
+@media (min-width: 1200px) {
+    .modal-xl {
+        --bs-modal-width: 1140px;
+    }
+}
