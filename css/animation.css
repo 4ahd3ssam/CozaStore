@@ -1,0 +1,14 @@
+@keyframes text-animation {
+    0% {
+        visibility: hidden;
+        transform: translateY(35%);
+    }
+    50% {
+        visibility: hidden;
+        transform: translateY(35%);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}

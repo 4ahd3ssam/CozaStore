@@ -1,0 +1,67 @@
+/*hero*/
+.carousel-item {
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-control-next {
+    right: 2%;
+}
+
+.carousel-control-prev {
+    left: 2%;
+}
+
+/*cards*/
+.card {
+    --bs-border-color-translucent: rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+.cards .layer {
+    background-color: #7180e0bf;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.cards .card .txt {
+    top: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.cards .card .txt::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.cards .card:hover .txt::after {
+    width: 100%;
+}
+
+.cards .card .txt a {
+    display: block;
+    transform: translateY(100%) scale(0.9);
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+
+.cards .card:hover .txt a {
+    transform: translateY(0) scale(1);
+}
+
+.cards .card:hover .layer {
+    opacity: 1;
+}
+
+.cards .card:hover .card-img-overlay {
+    color: white;
+}

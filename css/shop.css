@@ -1,0 +1,379 @@
+.navs .accordion {
+    --bs-border-radius: 0;
+    --bs-accordion-border-color: 0;
+}
+
+.navs .accordion-item:not(:first-of-type) {
+    border-top: 0;
+}
+
+.accordion-item {
+    border: 0;
+}
+
+.navs .accordion-button {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 100px;
+}
+
+.navs .accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 10px);
+    transform: translateY(-50%);
+    background-color: #717fe0;
+    width: 15px;
+    height: 0px;
+    transform: rotate(45deg);
+}
+
+.navs .accordion-button::after {
+    background-position: center;
+    background-size: contain;
+    width: 30%;
+    margin-left: 8px;
+}
+
+.navs .filter-button::after {
+    background-image: url('../images/sort.png');
+
+}
+
+.navs .search-button::after {
+    background-image: url('../images/search-interface-symbol.png');
+
+}
+
+.navs .accordion-button:hover {
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+}
+
+
+.navs .filter-button:hover::after {
+    background-image: url('../images/sort\ \(1\).png');
+}
+
+.navs .search-button:hover::after {
+    background-image: url('../images/search-interface-symbol\ \(1\).png');
+}
+
+
+.navs .accordion-button:not(.collapsed) {
+    background-color: #717fe0;
+    color: white;
+    border: 0;
+}
+
+
+.navs .accordion-button:not(.collapsed)::before {
+    height: 15px;
+    transition-delay: 0.2s;
+}
+
+.navs .accordion-button:not(.collapsed)::after {
+    background-image: url('../images/close.png');
+    transform: none;
+    width: 20%;
+}
+
+.navs .accordion-collapse a {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+
+}
+
+.navs .accordion-collapse a:hover,
+.navs .accordion-collapse a.active {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.navs .accordion-collapse .form-control {
+    border-radius: 0;
+}
+
+.navs .accordion-collapse .form-control:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+}
+
+.navs .accordion-collapse .colors li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.navs #collapseTwo i {
+    color: var(--dark-gray);
+    transition: 0.5s;
+}
+
+.navs #collapseTwo i:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+.navs .accordion-collapse .colors .black::before {
+    background-color: black;
+}
+
+.navs .accordion-collapse .colors .blue::before {
+    background-color: blue;
+}
+
+.navs .accordion-collapse .colors .grey::before {
+    background-color: grey;
+}
+
+.navs .accordion-collapse .colors .green::before {
+    background-color: green;
+}
+
+.navs .accordion-collapse .colors .red::before {
+    background-color: red;
+}
+
+.navs .accordion-collapse .colors .white::before {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+.heart-close {
+    display: none;
+}
+
+
+body:has(#all-check-fav1:checked) #all-check-fav1~.heart-close,
+body:has(#all-check-fav2:checked) #all-check-fav2~.heart-close,
+body:has(#all-check-fav3:checked) #all-check-fav3~.heart-close,
+body:has(#all-check-fav4:checked) #all-check-fav4~.heart-close,
+body:has(#all-check-fav5:checked) #all-check-fav5~.heart-close,
+body:has(#all-check-fav6:checked) #all-check-fav6~.heart-close,
+body:has(#all-check-fav7:checked) #all-check-fav7~.heart-close,
+body:has(#all-check-fav8:checked) #all-check-fav8~.heart-close,
+body:has(#all-check-fav9:checked) #all-check-fav9~.heart-close,
+body:has(#all-check-fav10:checked) #all-check-fav10~.heart-close,
+body:has(#all-check-fav11:checked) #all-check-fav11~.heart-close,
+body:has(#all-check-fav12:checked) #all-check-fav12~.heart-close,
+body:has(#all-check-fav13:checked) #all-check-fav13~.heart-close,
+body:has(#all-check-fav14:checked) #all-check-fav14~.heart-close,
+body:has(#all-check-fav15:checked) #all-check-fav15~.heart-close,
+body:has(#all-check-fav16:checked) #all-check-fav16~.heart-close,
+body:has(#all-check-fav17:checked) #all-check-fav17~.heart-close,
+body:has(#all-check-fav18:checked) #all-check-fav18~.heart-close,
+body:has(#check-fav1:checked) #check-fav1~.heart-close,
+body:has(#check-fav2:checked) #check-fav2~.heart-close,
+body:has(#check-fav3:checked) #check-fav3~.heart-close,
+body:has(#check-fav4:checked) #check-fav4~.heart-close,
+body:has(#check-fav5:checked) #check-fav5~.heart-close,
+body:has(#check-fav6:checked) #check-fav6~.heart-close,
+body:has(#check-fav7:checked) #check-fav7~.heart-close,
+body:has(#check-fav8:checked) #check-fav8~.heart-close,
+body:has(#check-fav9:checked) #check-fav9~.heart-close,
+body:has(#check-fav10:checked) #check-fav10~.heart-close,
+body:has(#check-fav11:checked) #check-fav11~.heart-close,
+body:has(#check-fav12:checked) #check-fav12~.heart-close,
+body:has(#check-fav13:checked) #check-fav13~.heart-close,
+body:has(#check-fav14:checked) #check-fav14~.heart-close,
+body:has(#check-fav15:checked) #check-fav15~.heart-close,
+body:has(#check-fav16:checked) #check-fav16~.heart-close,
+body:has(#check-fav17:checked) #check-fav17~.heart-close,
+body:has(#check-fav18:checked) #check-fav18~.heart-close {
+    display: block;
+}
+
+.heart-open {
+    cursor: pointer;
+}
+
+.navs .card {
+    cursor: auto;
+}
+
+body:has(#all-check-fav1:checked) #all-check-fav1~.heart-open,
+body:has(#all-check-fav2:checked) #all-check-fav2~.heart-open,
+body:has(#all-check-fav3:checked) #all-check-fav3~.heart-open,
+body:has(#all-check-fav4:checked) #all-check-fav4~.heart-open,
+body:has(#all-check-fav5:checked) #all-check-fav5~.heart-open,
+body:has(#all-check-fav6:checked) #all-check-fav6~.heart-open,
+body:has(#all-check-fav7:checked) #all-check-fav7~.heart-open,
+body:has(#all-check-fav8:checked) #all-check-fav8~.heart-open,
+body:has(#all-check-fav9:checked) #all-check-fav9~.heart-open,
+body:has(#all-check-fav10:checked) #all-check-fav10~.heart-open,
+body:has(#all-check-fav11:checked) #all-check-fav11~.heart-open,
+body:has(#all-check-fav12:checked) #all-check-fav12~.heart-open,
+body:has(#all-check-fav13:checked) #all-check-fav13~.heart-open,
+body:has(#all-check-fav14:checked) #all-check-fav14~.heart-open,
+body:has(#all-check-fav15:checked) #all-check-fav15~.heart-open,
+body:has(#all-check-fav16:checked) #all-check-fav16~.heart-open,
+body:has(#all-check-fav17:checked) #all-check-fav17~.heart-open,
+body:has(#all-check-fav18:checked) #all-check-fav18~.heart-open,
+body:has(#check-fav1:checked) #check-fav1~.heart-open,
+body:has(#check-fav2:checked) #check-fav2~.heart-open,
+body:has(#check-fav3:checked) #check-fav3~.heart-open,
+body:has(#check-fav4:checked) #check-fav4~.heart-open,
+body:has(#check-fav5:checked) #check-fav5~.heart-open,
+body:has(#check-fav6:checked) #check-fav6~.heart-open,
+body:has(#check-fav7:checked) #check-fav7~.heart-open,
+body:has(#check-fav8:checked) #check-fav8~.heart-open,
+body:has(#check-fav9:checked) #check-fav9~.heart-open,
+body:has(#check-fav10:checked) #check-fav10~.heart-open,
+body:has(#check-fav11:checked) #check-fav11~.heart-open,
+body:has(#check-fav12:checked) #check-fav12~.heart-open,
+body:has(#check-fav13:checked) #check-fav13~.heart-open,
+body:has(#check-fav14:checked) #check-fav14~.heart-open,
+body:has(#check-fav15:checked) #check-fav15~.heart-open,
+body:has(#check-fav16:checked) #check-fav16~.heart-open,
+body:has(#check-fav17:checked) #check-fav17~.heart-open,
+body:has(#check-fav18:checked) #check-fav18~.heart-open {
+    display: none;
+}
+
+.navs .card-text a {
+    color: var(--black-opacity-75);
+}
+
+.navs .card-text a:hover {
+    color: var(--main-color);
+}
+
+.navs .card .quick-view {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.navs .card .quick-view a {
+    color: var(--dark-gray)
+}
+
+.navs .card .quick-view:hover {
+    background-color: var(--dark-gray);
+    color: white;
+}
+
+.navs .card .quick-view {
+    top: 80%;
+}
+
+.navs .card .product .card-img-top {
+    transition: 0.5s;
+}
+
+.navs .product:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.navs .product .carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    opacity: 1;
+    transition: 0.5s;
+    border-top: none;
+    border-bottom: none;
+}
+
+.navs .product .carousel-indicators .active {
+    border: 1px solid black;
+}
+
+.navs .nav-link {
+    position: relative;
+}
+
+.navs .nav-link:hover,
+.nav-pills .nav-link.active {
+    color: var(--black-opacity-75);
+    background-color: transparent;
+}
+
+.navs .nav-link:hover::after,
+.nav-pills .nav-link.active::after {
+    opacity: 1;
+}
+
+.navs .nav-link {
+    color: var(--black-opacity-50);
+    background-color: transparent;
+}
+
+.navs .nav-link::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 32px);
+    height: 1px;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--black-opacity-50);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.navs .modal-product .btn-add {
+    color: var(--dark-gray);
+}
+
+.navs .modal-product .btn-add:hover i {
+    color: white;
+}
+
+.navs .modal-product .out {
+    --bs-btn-close-focus-shadow: none;
+}
+
+.carousel {
+    box-sizing: border-box;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-size: 50% 50%;
+}
+
+.modal-product .form-select:focus,
+.modal-product .form-control:focus {
+    border-color: var(--main-color);
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: black;
+}
+
+.label-all-load-more {
+    cursor: pointer;
+    width: 120px;
+    background-color: rgb(69, 69, 69);
+}
+
+.label-all-load-more:hover {
+    background-color: var(--dark-gray);
+}
+
+.label-all-load-more .less {
+    display: none;
+}
+
+body:has(#check-all-load-more:checked) .label-all-load-more .more {
+    display: none;
+}
+
+body:has(#check-all-load-more:checked) .label-all-load-more .less {
+    display: block;
+}

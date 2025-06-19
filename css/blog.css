@@ -1,0 +1,55 @@
+header {
+    height: 30vh;
+    background-image: url('../images/bg-02.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-blog button {
+    background-color: rgb(191, 191, 191);
+    width: 40px;
+    height: 40px;
+}
+
+.nav-blog .nav-link.active,
+.nav-blog button:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.img-scale {
+    transition: 0.5s;
+}
+
+.img-scale:hover {
+    transform: scale(1.1);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.blog ul a {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+}
+
+.blog ul a:hover,
+.blog ul a.active {
+    color: var(--main-color);
+}
+
+.bg-main-opacity {
+    background-color: #7180e0a3;
+}
+.image .layer {
+    opacity: 0;
+    transition: 0.2s;
+}
+.image:hover .layer {
+    opacity: 1;
+}
